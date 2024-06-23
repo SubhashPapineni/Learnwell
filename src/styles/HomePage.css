@@ -1,5 +1,5 @@
 /* HomePage.css */
-
+/* This is Styling for the HomePage */
 .home-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -16,12 +16,9 @@
   .logo {
     width: 150px; 
     height: auto;
-    
-    /* margin-left: 45%; */
   }
   
   .content {
-    /* display: grid; */
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -31,7 +28,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
   
   .search-form {
     display: flex;
@@ -43,12 +39,6 @@
     font-size: 16px;
   }
   
-  /* .search-button {
-    padding: 5px 10px;
-    margin-left: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  } */
   button {
     padding: 10px 20px;
     color: #ffff;

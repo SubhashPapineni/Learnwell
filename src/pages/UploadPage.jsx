@@ -3,6 +3,11 @@ import axios from 'axios';
 import '../styles/UploadPage.css';
 import { FaVideo, FaLink, FaFileAlt} from 'react-icons/fa'; 
 
+/**
+ * UploadPage component
+ * This component provides a form for users to upload a video by entering a title, description, and video URL.
+ */
+
 const UploadPage = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -10,11 +15,16 @@ const UploadPage = () => {
     videoUrl: '',
   });
 
+  /**
+   * handleSubmit - Function to handle form submission
+   * @param {object} e - The form submission event
+   */
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     const payload = {
-      user_id: 'Subhash',
+      user_id: 'Subhash', // Example user_id, replace with actual dynamic user id as needed
       description: formData.description,
       video_url: formData.videoUrl,
       title: formData.title,
@@ -24,6 +34,7 @@ const UploadPage = () => {
       const response = await axios.post('https://take-home-assessment-423502.uc.r.appspot.com/api/videos', payload);
       console.log('Upload response:', response.data);
       alert('Video uploaded successfully!');
+      // Reset form data upon successful upload
       setFormData({
         title: '',
         description: '',

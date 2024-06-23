@@ -34,32 +34,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## About this project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Created a webpage "Learnwell".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Given Requirements:
+-- Show a list of videos and allow users to select a video from the list.
 
-### Code Splitting
+-- Allow the user to create a new video object with a title, description and a video URL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-- A user must be able to comment on a video and view comments from other users.
 
-### Analyzing the Bundle Size
+-- Open the videos in full screen with full playback functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-- Include options for adjusting playback speed and volume. 
 
-### Making a Progressive Web App
+### My implementation:
+1. Created a webpage that shows a list of Videos and a user can select any video form the list.
+2. Created an "Upload Page", When ever a user clicks on upload button on the hoempage it will direct them to a new page where they can upload a video by giving Title, Discription and Link of the video.
+3. All the Uploaded videos can be viewed in the home page.
+4. A user can comment on a video and it can be viewed in the comment section(Note: "User name in the comment is hard coded as Subhash because of the limitation of API")
+5. we can open the Video in full screen and adjust the playback speed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### ADD ONS:
+1. Added a search box for the home page and video page for Future work("To make it work need to API").
+2. Added Related Videos section where a user can click and watch other uploaded videos from the website.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Future work:
+1. Hard coded images for the video thumbnails can be improved to video related images.
+2. Make the searchbox work.

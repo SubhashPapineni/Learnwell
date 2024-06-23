@@ -9,17 +9,29 @@ import logo from '../assets/FULL_LOGO_DARK.png';
 import UploadButton from '../components/UploadButton';
 import '../styles/HomePage.css';
 
+/**
+ * VideoPage component
+ * This component displays a specific video based on the ID from the URL.
+ * It also fetches and displays related videos and includes a comment section.
+ */
+
 const VideoPage = () => {
   const { id } = useParams();
   const [video, setVideo] = useState(null);
   const [relatedVideos, setRelatedVideos] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
+  /**
+   * handleSearch - Function to handle the search form submission
+   * @param {object} event - The form submission event
+   */
+
   const handleSearch = (event) => {
     event.preventDefault();
-    // fetchVideo(searchQuery);
+    // Add search functionality 
   };
 
+   // Fetch the video and related videos when the component mounts or the ID changes
   useEffect(() => {
     const fetchVideo = async () => {
       try {
@@ -33,7 +45,7 @@ const VideoPage = () => {
 
     const fetchRelatedVideos = async () => {
       try {
-        const response = await axios.get('https://take-home-assessment-423502.uc.r.appspot.com/api/videos?user_id=Subhash'); // Replace with your endpoint to fetch related videos
+        const response = await axios.get('https://take-home-assessment-423502.uc.r.appspot.com/api/videos?user_id=Subhash');
         setRelatedVideos(response.data.videos);
       } catch (error) {
         console.error('Error fetching related videos:', error);
@@ -44,12 +56,17 @@ const VideoPage = () => {
     fetchRelatedVideos();
   }, [id]);
 
+// Display a loading message while the video is being fetched
   if (!video) {
     return <div>Loading...</div>;
   }
+
+// Generate the embed URL for the video
 const embedUrl = `https://www.youtube.com/embed/${video.video_url.split('v=')[1]}`;
+
 return (
   <div>
+      {/* Header section containing search form, logo, and upload button */}
      <div className="home-page">
       <header className="header">
         <form onSubmit={handleSearch} className="search-form">

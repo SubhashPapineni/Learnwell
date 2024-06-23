@@ -1,15 +1,9 @@
 /* VideoPage.css */
+/* Styling for the Video Page */
 
 .video-page {
-    /* max-width: 1200px;
-    margin: 0 20%; */
     padding: 20px; 
     display: flex;
-    /* gap: 20px; */
-  }
-
-  .video-player {
-    /* margin-top: 40px; */
   }
   
   .video-container {

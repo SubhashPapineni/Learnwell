@@ -1,10 +1,6 @@
 /* RelatedVideos.css */
+/* This is the Styling for Related Video sedction in the VideoPage */
 
-.related-videos {
-    /* margin-top: 20px; */
-    /* margin-left: 50px; */
-  }
-  
   .related-videos h2 {
     font-size: 18px;
     color: #333;
