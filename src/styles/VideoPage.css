@@ -1,0 +1,34 @@
+/* VideoPage.css */
+
+.video-page {
+    /* max-width: 1200px;
+    margin: 0 20%; */
+    padding: 20px; 
+    display: flex;
+    /* gap: 20px; */
+  }
+
+  .video-player {
+    /* margin-top: 40px; */
+  }
+  
+  .video-container {
+    flex: 2;
+  }
+  
+  .related-videos {
+    flex: 1;
+  }
+  
+  .related-videos h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .video-page {
+      flex-direction: column;
+    }
+  }
+  

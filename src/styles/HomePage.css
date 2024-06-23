@@ -1,0 +1,63 @@
+/* HomePage.css */
+
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    width: 150px; 
+    height: auto;
+    
+    /* margin-left: 45%; */
+  }
+  
+  .content {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* .search-button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  } */
+  button {
+    padding: 10px 20px;
+    color: #ffff;
+    background-color: #2ac2f0;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    width: 120px;
+  }
+  

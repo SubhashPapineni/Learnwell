@@ -1,0 +1,44 @@
+/* VideoList.css */
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .video-item:hover {
+    border-color: #4285f4;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .video-info {
+    padding: 10px;
+  }
+  
+  .video-title {
+    font-size: 20px;
+    color: #229eb4;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .video-user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #161616;
+  }
+  
